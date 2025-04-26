@@ -1,0 +1,142 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+    padding: 20px;
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4e89ae;
+    border-bottom: 3px solid #4e89ae;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MEMORY */
+.memory-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #f8d3ff;
+    border: 3px solid #e58cff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    backface-visibility: hidden;
+}
+
+.card img.hidden {
+    display: none;
+}
+
+/* MOT À COMPLÉTER */
+button {
+    background-color: #ffd93d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4c10f;
+}
+
+#mot-result {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* INTRUS */
+.intrus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.intrus-img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #4dd599;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.intrus-img:hover {
+    transform: scale(1.05);
+}
+
+#intrus-result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+.card img.hidden {
+    display: none;
+}
+
+.card {
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+
+.card.flipped {
+    transform: scale(1.05);
+}
+
+.memory-grid h2 {
+    color: #4CAF50;
+}
