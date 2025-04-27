@@ -7,21 +7,19 @@ $intrusItems = getIntrusSet();
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Jeux éducatifs</title>
     <link rel="stylesheet" href="assets/jeu.css">
-    <script src="assets/jeu.js" defer></script>
-    <meta charset="UTF-8">
-    <title>Jeux éducatifs</title>
-    <!-- ✅ Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="assets/jeu.css">
+    <script src="assets/jeu.js" ></script>
 </head>
+
 <body>
 <h1>🎲 Jeux éducatifs</h1>
 
 <section>
-    <h2>🧠 Memory</h2>
+    <h2>🧠 Jeu de mémoire </h2>
     <div class="memory-grid">
         <?php
         $cards = array_merge($memoryItems, $memoryItems);
@@ -29,14 +27,14 @@ $intrusItems = getIntrusSet();
         foreach ($cards as $index => $item):
         ?>
             <div class="card" data-id="<?= $item['id'] ?>">
-                <img src="uploads/images/<?= $item['image'] ?>" alt="Carte de memory">
+                <img src="uploads/images/<?= $item['image'] ?>" alt="Carte de mémoire">
             </div>
         <?php endforeach; ?>
     </div>
 </section>
 
 <section>
-    <h2>🔤 Complète le mot</h2>
+    <h2>🔤 Compléter le mot</h2>
     <?php
     $motComplet = $mot['titre'];
     $indice = rand(1, strlen($motComplet)-2);
@@ -59,7 +57,7 @@ $intrusItems = getIntrusSet();
 </section>
 
 <section>
-    <h2>🚨 Trouve l’intrus</h2>
+    <h2>🔎 Trouver l’intrus</h2>
     <div class="intrus-grid">
         <?php foreach ($intrusItems as $item): ?>
             <img src="uploads/images/<?= $item['image'] ?>" class="intrus-img" onclick="checkIntrus(this, <?= $item['categorie_id'] ?>)" alt="Image intrus">
@@ -68,7 +66,5 @@ $intrusItems = getIntrusSet();
     <p id="intrus-result"></p>
 </section>
 
-<!-- ✅ Lien vers le fichier JS -->
-<script src="assets/jeu.js"></script>
 </body>
 </html>
