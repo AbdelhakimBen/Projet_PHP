@@ -102,7 +102,7 @@ function deleteElement($id) {
         return $stmt->execute([$id]);
     }
 
-    return false; // Element not found
+    return false; 
 }
 
 
@@ -119,16 +119,15 @@ function getRandomWord() {
 function getIntrusSet() {
     $conn = Database::getInstance()->getConnection();
 
-    // Choisir une catégorie
+    
     $catStmt = $conn->query("SELECT id FROM categories ORDER BY RAND() LIMIT 1");
     $catId = $catStmt->fetchColumn();
 
-    // Prendre 3 éléments de cette catégorie
+    //
+9
     $stmt1 = $conn->prepare("SELECT * FROM elements WHERE categorie_id = ? ORDER BY RAND() LIMIT 3");
     $stmt1->execute([$catId]);
     $sameCat = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-
-    // Prendre 1 élément d'une autre catégorie
     $stmt2 = $conn->prepare("SELECT * FROM elements WHERE categorie_id != ? ORDER BY RAND() LIMIT 1");
     $stmt2->execute([$catId]);
     $intrus = $stmt2->fetch(PDO::FETCH_ASSOC);
