@@ -1,5 +1,5 @@
 
-// MEMORY GAME
+// Jeu de mémoire
 let flipped = [];
 let matchedPairs = 0;
 const totalPairs = document.querySelectorAll('.card').length / 2;
@@ -45,7 +45,7 @@ document.querySelectorAll('.card').forEach(card => {
     });
 });
 
-// COMPLÉTION DE MOT
+// COMPLÉTER LE MOT
 function checkMot(choix, correct) {
     const res = document.getElementById("mot-result");
     const motDisplay = document.querySelector("#mot-complet");
@@ -64,7 +64,7 @@ function checkMot(choix, correct) {
     }
 }
 
-// INTRUS
+// TROUVER L'INTRUS
 let referenceCategory = null;
 function checkIntrus(img, catId) {
     if (!referenceCategory) {
