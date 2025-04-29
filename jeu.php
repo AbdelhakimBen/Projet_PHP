@@ -15,6 +15,7 @@ $intrusItems = getIntrusSet();
 </head>
 
 <body>
+<a href="index.php" > ⟵ Retour à l'accueil </a>
 <h1>🎲 Jeux éducatifs</h1>
 
 <section>
