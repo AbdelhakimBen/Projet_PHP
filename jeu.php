@@ -12,7 +12,6 @@ $intrusItems = getIntrusSet();
     <meta charset="UTF-8">
     <title>Jeux éducatifs</title>
     <link rel="stylesheet" href="assets/jeu.css">
-    <script src="assets/jeu.js" ></script>
 </head>
 
 <body>
@@ -66,5 +65,6 @@ $intrusItems = getIntrusSet();
     <p id="intrus-result"></p>
 </section>
 
+<script src="assets/jeu.js" ></script>
 </body>
 </html>
