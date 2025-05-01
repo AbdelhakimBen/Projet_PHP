@@ -52,7 +52,7 @@ Bienvenue sur **l3b w 9ra**, une plateforme web éducative interactive destinée
 
 ## 💡 Auteurs
 
-- Projet réalisé par Benatti Abdelhakim ,Chaimae Sifr ,Brahim Mekkaoui,Ilyas Jaafar dans le cadre d'un projet universitaire en PHP/MySQL.
+- Projet réalisé par Benatti Abdelhakim ,Chaimae Sifer ,Brahim Mekkaoui,Ilias Jaafar dans le cadre d'un projet universitaire en PHP/MySQL.
 
 ---
 
