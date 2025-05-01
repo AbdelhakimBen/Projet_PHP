@@ -33,7 +33,7 @@ Bienvenue sur **l3b w 9ra**, une plateforme web éducative interactive destinée
    - Assurez-vous que les répertoires `uploads/images` et `uploads/audios` sont accessibles et ont des permissions d'écriture.
 
 4. **Accéder au projet** :
-   - Aller sur [http://localhost/l3b_w_9ra(http://localhost/l3b_w_9ra)
+   - Aller sur [http://localhost/l3b_w_9ra](http://localhost/l3b_w_9ra)
 
 ## 🔐 Accès Admin
 
