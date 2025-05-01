@@ -20,7 +20,7 @@ Bienvenue sur **l3b w 9ra**, une plateforme web éducative interactive destinée
 
 1. **Cloner le projet** (ou télécharger les fichiers) :
    ```bash
-   git clone https://github.com/AbdelhakimBen/Projet_PHP.git
+   git clone https://github.com/AbdelhakimBen/l3b_w_9ra.git
    ```
 
 2. **Importer la base de données** :
@@ -33,7 +33,7 @@ Bienvenue sur **l3b w 9ra**, une plateforme web éducative interactive destinée
    - Assurez-vous que les répertoires `uploads/images` et `uploads/audios` sont accessibles et ont des permissions d'écriture.
 
 4. **Accéder au projet** :
-   - Aller sur [http://localhost/Projet_PHP(http://localhost/Projet_PHP)
+   - Aller sur [http://localhost/l3b_w_9ra(http://localhost/l3b_w_9ra)
 
 ## 🔐 Accès Admin
 
